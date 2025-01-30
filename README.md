@@ -44,12 +44,12 @@ Este proyecto es una implementación de una **lista enlazada simple** en Rust. L
 ### `Nodo`
 Representa un nodo en la lista enlazada. Cada nodo contiene:
 - `dato`: El valor almacenado en el nodo.
-- `siguiente`: Una referencia al siguiente nodo en la lista.
+- `puntero`: Una referencia al siguiente nodo en la lista.
 
 ```rust
 struct Nodo {
     dato: i32,
-    siguiente: Option<Box<Nodo>>,
+    puntero: Option<Box<Nodo>>,
 }
 ```
 
